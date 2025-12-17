@@ -3,12 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <title>Feedback Form</title>
 </head>
 <body>
-    <h1>welcome</h1>
-    <ul>
-        <li><a href="index.html"></a></li>
-    </ul>
+    <h1>Feedback Form</h1>
+    <hr>
+    <p>We would like to hear your sincere feedback</p>
+    
+    <form action="">
+    <table>
+        <tr>
+            <td><p><b>Name</b></p></td>
+            <td><input type="text" placeholder="Enter your name"></td>
+        </tr>
+        <tr>
+            <td><p><b>Email</b></p></td>
+            <td><input type="email" placeholder="exp:john@gmail.com"</td>
+        </tr>
+        <tr>
+            <td><b>Date</b></td>
+            <td><input type="Date"></td>
+        </tr>
+        <tr>
+            <td><p><b>Gender</b></p></b></td>
+            <td><input type="radio" name="gender" id="" value="">Male <input type="radio" name="gender" id="" value="">Female</td>
+        </tr>
+        <tr>
+            <td><p><b>Service</b></p></td>
+            <td><input type="range" min="0" max="100" value="50" oninput="document.getElementByid('rangevalue').textcontent=this.value">
+                <label for=""><span id="rangevalue">50</span>%</label></td>
+        </tr>
+        <tr>
+            <td><p><b>Area of <br>Improvement</b></p></td>
+            <td>
+                <input type="checkbox">Food <br>
+                <input type="checkbox" name="" id="">Environment <br>
+                <input type="checkbox">staff
+            </td>
+            <td>
+                <input type="checkbox">Clean <br>
+                <input type="checkbox" name="" id="">Taste <br>
+                <input type="checkbox">price
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td><p><b>Comment</b></p></td>
+            <td><textarea name="" id="" rows="6" cols="50"></textarea></td>
+        </tr>
+    </table>
+    <input type="submit" value="SUBMIT"><input type="reset" value="RESET">
+
+
+    </form>
 </body>
 </html>
